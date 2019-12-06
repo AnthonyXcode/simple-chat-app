@@ -1,32 +1,8 @@
 import React, { Component } from 'react';
-import { Alert, StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { Text, View, TextInput, Button } from 'react-native';
 import * as firebase from 'firebase'
 import Chat from './chat'
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  paper: {
-    backgroundColor: '#eeeeee',
-    width: '280px',
-    height: '150px'
-  },
-  rowContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: '8px'
-  },
-  textInput: {
-    backgroundColor: '#ffffff',
-    flex: 1,
-    height: '32px'
-  }
-});
+import styles from './styles'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCiEya5cPfSTBrvYjC7g3MzKQEXASWpSpg",
